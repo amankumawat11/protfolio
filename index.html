@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aman Kumawat | Personal Profile</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="chatbot.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <p class="eyebrow">India</p>
+      <h1>Aman Kumawat</h1>
+      <p class="tagline">
+        Aspiring web developer building thoughtful, user-friendly digital experiences.
+      </p>
+    </header>
+
+    <main>
+      <section class="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <p>
+          I am Aman Kumawat, an aspiring web developer passionate about creating
+          clean, responsive websites and practical digital solutions.
+        </p>
+        <p>
+          I enjoy learning new technologies, improving my problem-solving skills,
+          and building projects that make everyday tasks simpler.
+        </p>
+      </section>
+
+      <section class="skills" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills</h2>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Responsive Web Design</li>
+          <li>Git and GitHub</li>
+        </ul>
+      </section>
+
+      <section class="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects</h2>
+        <ul>
+          <li>
+            <a href="https://github.com/">Personal Portfolio Website</a>
+            <p>
+              A responsive personal website created to showcase my skills,
+              projects, and contact information.
+            </p>
+          </li>
+          <li>
+            <a href="https://github.com/">Weather Dashboard</a>
+            <p>
+              A simple weather application that lets users search for current
+              conditions by city.
+            </p>
+          </li>
+          <li>
+            <a href="https://github.com/">Task Manager</a>
+            <p>
+              A lightweight task-management app for adding, organizing, and
+              tracking daily work.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="weather" aria-labelledby="weather-heading">
+        <h2 id="weather-heading">Weather</h2>
+        <label for="cityInput">City</label>
+        <div class="weather-controls">
+          <input
+            type="text"
+            id="cityInput"
+            placeholder="Enter a city"
+          />
+          <button type="button" id="weatherButton">Get Weather</button>
+        </div>
+        <div id="weatherResult">Enter a city to see the weather.</div>
+        <button type="button" id="themeToggle">Switch to Dark Mode</button>
+      </section>
+    </main>
+    <section id="aiChatSection" class="ai-chat">
+      <h2>Ask My AI Assistant</h2>
+    
+      <p>
+        Ask questions about this portfolio,
+        projects, and technologies.
+      </p>
+    
+      <div
+        id="chatMessages"
+        aria-live="polite"
+      ></div>
+    
+      <div class="chat-controls">
+        <input
+          type="text"
+          id="userInput"
+          placeholder="Ask a question..."
+        />
+    
+        <button id="sendButton" type="button">
+          Send
+        </button>
+      </div>
+    
+      <p id="chatStatus" role="status"></p>
+    
+      <p class="chat-note">
+        AI chat is available during the local
+        classroom demonstration only.
+      </p>
+    </section>
+    <footer class="site-footer">
+      <p>
+        Open to collaboration, learning opportunities, and new web-development
+        projects.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="config.js"></script>
+<script src="chatbot.js"></script>
+  </body>
+</html>
